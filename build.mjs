@@ -10,7 +10,7 @@ function buildWorker({ entry, out, debug, external } = {}) {
 		entryPoints: [entry],
 		sourcemap: true,
 		outfile: out,
-		external,
+		external: ['cloudflare:sockets'],
 		logLevel: 'warning',
 		format: 'esm',
 		target: 'es2022',
